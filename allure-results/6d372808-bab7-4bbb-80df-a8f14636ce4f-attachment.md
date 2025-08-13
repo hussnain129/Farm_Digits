@@ -1,0 +1,351 @@
+# Page snapshot
+
+```yaml
+- navigation:
+  - link "FarmDigits Logo":
+    - /url: /
+    - img "FarmDigits Logo"
+  - link "Home":
+    - /url: /
+  - link "Features":
+    - /url: /features
+  - link "Pricing":
+    - /url: /pricing
+  - link "About":
+    - /url: /about
+  - link "Contact":
+    - /url: /contact
+  - button "Toggle theme":
+    - img
+  - link "Sign In":
+    - /url: /login
+  - link "Get Started Free":
+    - /url: /signup
+- main:
+  - text: "🏆 #1 Farm Management Platform - Trusted by 2,500+ Farmers"
+  - heading "Transform Your Farm with Smart Management" [level=1]
+  - paragraph: Monitor livestock health, track inventory, manage finances, and boost productivity with our all-in-one farm management solution.
+  - link "Start Free 30-Day Trial":
+    - /url: /signup
+    - text: Start Free 30-Day Trial
+    - img
+  - link "Watch Demo":
+    - /url: "#demo"
+    - img
+    - text: Watch Demo
+  - paragraph: No credit card required • Cancel anytime • 24/7 support
+  - img
+  - text: 2,500+
+  - paragraph: Active Farmers
+  - img
+  - text: 15M+
+  - paragraph: Animals Tracked
+  - img
+  - text: 99.9%
+  - paragraph: Uptime
+  - img
+  - text: 4.9/5
+  - paragraph: User Rating
+  - img
+  - heading "Livestock Health Tracking" [level=3]
+  - paragraph: Monitor animal health, vaccination schedules, and breeding records with automated alerts and reminders.
+  - img
+  - heading "Smart Inventory Management" [level=3]
+  - paragraph: Track feed, supplies, and equipment with automated reorder points and cost optimization insights.
+  - img
+  - heading "Financial Analytics" [level=3]
+  - paragraph: Track expenses, revenue, and profitability with detailed reports and predictive analytics.
+  - heading "Unleash the power of Farm Management" [level=1]
+  - img "FarmDigits Dashboard Overview"
+  - text: Comprehensive Farm Management
+  - heading "Everything You Need to Manage Your Farm" [level=2]
+  - paragraph: From livestock health to financial analytics, our platform provides all the tools modern farmers need to succeed.
+  - img
+  - heading "Animal Health Management" [level=3]
+  - paragraph: Track vaccinations, treatments, breeding cycles, and health records with automated reminders and alerts.
+  - text: Reduce mortality rates Optimize breeding Prevent disease outbreaks
+  - img
+  - heading "Smart Inventory Control" [level=3]
+  - paragraph: Monitor feed levels, supplies, and equipment with automated reorder points and cost optimization.
+  - text: Reduce waste by 25% Never run out of feed Optimize purchasing
+  - img
+  - heading "Financial Analytics" [level=3]
+  - paragraph: Track expenses, revenue, and profitability with detailed reports and predictive insights.
+  - text: Increase profit margins Better cash flow Tax preparation
+  - img
+  - heading "Production Analytics" [level=3]
+  - paragraph: Monitor milk production, egg laying, weight gain, and other key performance indicators.
+  - text: Optimize feed efficiency Identify top performers Predict outcomes
+  - img
+  - heading "Smart Alerts & Reminders" [level=3]
+  - paragraph: Get notified about important events, health issues, and maintenance schedules.
+  - text: Never miss vaccinations Early problem detection Automated workflows
+  - img
+  - heading "Mobile Farm Management" [level=3]
+  - paragraph: Access your farm data anywhere with our mobile app. Work offline and sync when connected.
+  - text: Work from anywhere Offline capability Real-time updates
+  - heading "Trusted by Farmers Worldwide" [level=3]
+  - paragraph: Join thousands of farmers who have transformed their operations with FarmDigits
+  - img
+  - text: 2,500+ Active Farmers
+  - img
+  - text: 35% Average Productivity Increase
+  - img
+  - text: 99.9% Data Security Uptime
+  - img
+  - text: 24/7 Customer Support Testimonials
+  - heading "What our users say" [level=2]
+  - paragraph: See what our customers have to say about us.
+  - text: This ERP revolutionized our operations, streamlining finance and inventory. The cloud-based platform keeps us productive, even remotely.
+  - img "Briana Patton"
+  - text: Briana Patton Operations Manager Implementing this ERP was smooth and quick. The customizable, user-friendly interface made team training effortless.
+  - img "Bilal Ahmed"
+  - text: Bilal Ahmed IT Manager The support team is exceptional, guiding us through setup and providing ongoing assistance, ensuring our satisfaction.
+  - img "Saman Malik"
+  - text: Saman Malik Customer Support Lead This ERP revolutionized our operations, streamlining finance and inventory. The cloud-based platform keeps us productive, even remotely.
+  - img "Briana Patton"
+  - text: Briana Patton Operations Manager Implementing this ERP was smooth and quick. The customizable, user-friendly interface made team training effortless.
+  - img "Bilal Ahmed"
+  - text: Bilal Ahmed IT Manager The support team is exceptional, guiding us through setup and providing ongoing assistance, ensuring our satisfaction.
+  - img "Saman Malik"
+  - text: Saman Malik Customer Support Lead This ERP's seamless integration enhanced our business operations and efficiency. Highly recommend for its intuitive interface.
+  - img "Omar Raza"
+  - text: Omar Raza CEO Its robust features and quick support have transformed our workflow, making us significantly more efficient.
+  - img "Zainab Hussain"
+  - text: Zainab Hussain Project Manager The smooth implementation exceeded expectations. It streamlined processes, improving overall business performance.
+  - img "Aliza Khan"
+  - text: Aliza Khan Business Analyst This ERP's seamless integration enhanced our business operations and efficiency. Highly recommend for its intuitive interface.
+  - img "Omar Raza"
+  - text: Omar Raza CEO Its robust features and quick support have transformed our workflow, making us significantly more efficient.
+  - img "Zainab Hussain"
+  - text: Zainab Hussain Project Manager The smooth implementation exceeded expectations. It streamlined processes, improving overall business performance.
+  - img "Aliza Khan"
+  - text: Aliza Khan Business Analyst Our business functions improved with a user-friendly design and positive customer feedback.
+  - img "Farhan Siddiqui"
+  - text: Farhan Siddiqui Marketing Director They delivered a solution that exceeded expectations, understanding our needs and enhancing our operations.
+  - img "Sana Sheikh"
+  - text: Sana Sheikh Sales Manager Using this ERP, our online presence and conversions significantly improved, boosting business performance.
+  - img "Hassan Ali"
+  - text: Hassan Ali E-commerce Manager Our business functions improved with a user-friendly design and positive customer feedback.
+  - img "Farhan Siddiqui"
+  - text: Farhan Siddiqui Marketing Director They delivered a solution that exceeded expectations, understanding our needs and enhancing our operations.
+  - img "Sana Sheikh"
+  - text: Sana Sheikh Sales Manager Using this ERP, our online presence and conversions significantly improved, boosting business performance.
+  - img "Hassan Ali"
+  - text: Hassan Ali E-commerce Manager
+  - img
+  - text: Trusted by 2,500+ farmers worldwide
+  - heading "Simple, Transparent Pricing" [level=2]
+  - paragraph: Start with our free trial and scale as your farm grows. No hidden fees, no surprises.
+  - paragraph: Save up to 20% with yearly billing
+  - img
+  - heading "Basic" [level=3]
+  - paragraph: Perfect for small farms getting started with digital management
+  - text: $30 /month
+  - paragraph: or $25/month billed yearly
+  - list:
+    - listitem:
+      - img
+      - text: Up to 5 users
+    - listitem:
+      - img
+      - text: Single farm management
+    - listitem:
+      - img
+      - text: Basic reporting
+  - link "Get Started":
+    - /url: /pricing
+    - text: Get Started
+    - img
+  - text: Most Popular
+  - img
+  - heading "Professional" [level=3]
+  - paragraph: Ideal for growing farms with advanced management needs
+  - text: $80 /month
+  - paragraph: or $67/month billed yearly
+  - list:
+    - listitem:
+      - img
+      - text: Up to 15 users
+    - listitem:
+      - img
+      - text: Up to 3 farms
+    - listitem:
+      - img
+      - text: Advanced reporting
+  - link "Get Started":
+    - /url: /pricing
+    - text: Get Started
+    - img
+  - img
+  - heading "Enterprise" [level=3]
+  - paragraph: Complete solution for large-scale farming operations
+  - text: $200 /month
+  - paragraph: or $167/month billed yearly
+  - list:
+    - listitem:
+      - img
+      - text: Unlimited users
+    - listitem:
+      - img
+      - text: Unlimited farms
+    - listitem:
+      - img
+      - text: Custom reporting
+  - link "Get Started":
+    - /url: /pricing
+    - text: Get Started
+    - img
+  - paragraph: Need more details? Compare all features and see customer testimonials.
+  - link "View Detailed Pricing & Features":
+    - /url: /pricing
+    - text: View Detailed Pricing & Features
+    - img
+  - img
+  - text: Rated 4.9/5 by 2,500+ Farmers
+  - heading "Ready to Transform Your Farm?" [level=2]
+  - paragraph: Join thousands of farmers who've increased their productivity and profitability with FarmDigits
+  - img
+  - text: 30-day free trial with full access
+  - img
+  - text: No setup fees or hidden costs
+  - img
+  - text: Cancel anytime, no questions asked
+  - img
+  - text: 24/7 customer support included
+  - link "Start Your Free Trial":
+    - /url: /sign-up
+    - text: Start Your Free Trial
+    - img
+  - link "View Pricing Plans":
+    - /url: /pricing
+  - img
+  - text: 2,500+
+  - paragraph: Active Farmers
+  - img
+  - text: 35%
+  - paragraph: Average Productivity Increase
+  - img
+  - text: 4.9/5
+  - paragraph: Customer Rating
+  - paragraph: "\"Increased our farm efficiency by 40%\""
+  - paragraph: — Sarah Johnson, Dairy Farm
+  - paragraph: "\"Best investment we've made for our operation\""
+  - paragraph: — Mike Chen, Livestock Ranch
+  - paragraph: "\"Simple to use, powerful results\""
+  - paragraph: — Emma Rodriguez, Poultry Farm
+- contentinfo:
+  - link "FarmDigits Logo":
+    - /url: /
+    - img "FarmDigits Logo"
+  - paragraph: Empowering farmers with intelligent digital solutions. Transform your agricultural operations with our comprehensive farm management platform trusted by thousands worldwide.
+  - text: 2,500+ Active Farmers 15M+ Animals Tracked
+  - link "Facebook":
+    - /url: https://facebook.com/farmdigits
+    - img
+  - link "Twitter":
+    - /url: https://twitter.com/farmdigits
+    - img
+  - link "LinkedIn":
+    - /url: https://linkedin.com/company/farmdigits
+    - img
+  - link "Instagram":
+    - /url: https://instagram.com/farmdigits
+    - img
+  - heading "Platform" [level=3]
+  - list:
+    - listitem:
+      - link "Features":
+        - /url: /features
+        - img
+        - text: Features
+    - listitem:
+      - link "Pricing":
+        - /url: /pricing
+        - img
+        - text: Pricing
+    - listitem:
+      - link "Dashboard":
+        - /url: /dashboard
+        - img
+        - text: Dashboard
+    - listitem:
+      - link "Integrations":
+        - /url: /integrations
+        - img
+        - text: Integrations
+  - heading "Solutions" [level=3]
+  - list:
+    - listitem:
+      - link "Livestock Management":
+        - /url: /features#livestock
+        - img
+        - text: Livestock Management
+    - listitem:
+      - link "Milk Sales":
+        - /url: /features#milk-sales
+        - img
+        - text: Milk Sales
+    - listitem:
+      - link "Smart Inventory":
+        - /url: /features#inventory
+        - img
+        - text: Smart Inventory
+    - listitem:
+      - link "Analytics & Reports":
+        - /url: /features#analytics
+        - img
+        - text: Analytics & Reports
+  - heading "Support" [level=3]
+  - list:
+    - listitem:
+      - link "Contact Us":
+        - /url: /contact
+        - img
+        - text: Contact Us
+    - listitem:
+      - link "About Us":
+        - /url: /about
+        - img
+        - text: About Us
+    - listitem:
+      - link "Help Center":
+        - /url: /help
+        - img
+        - text: Help Center
+    - listitem:
+      - link "API Documentation":
+        - /url: /api-docs
+        - img
+        - text: API Documentation
+  - img
+  - text: support@farmdigits.com
+  - img
+  - text: +1 (555) 123-4567
+  - img
+  - text: Stay Updated
+  - heading "Get the Latest Farm Tech Insights" [level=3]
+  - paragraph: Subscribe to our newsletter for farming tips, product updates, and industry insights delivered to your inbox.
+  - textbox "Enter your email address"
+  - button "Subscribe":
+    - text: Subscribe
+    - img
+  - text: © 2025 FarmDigits. All rights reserved. • Made with
+  - img
+  - text: for farmers worldwide • Developed with
+  - img
+  - text: by
+  - link "Outscalers":
+    - /url: https://outscalers.com
+  - link "Privacy Policy":
+    - /url: /privacy
+  - link "Terms of Service":
+    - /url: /terms
+  - link "Cookie Policy":
+    - /url: /cookies
+  - link "Security":
+    - /url: /security
+- region "Notifications (F8)":
+  - list
+- alert
+```

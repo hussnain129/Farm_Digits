@@ -1,34 +1,41 @@
 import { Page, expect } from '@playwright/test';
+import { BasePage } from './base.page';
 
+/**
+ * Page Object for the "Add New Animal" modal.
+ * Provides high-level methods to open/close the modal and fill/submit the form.
+ */
 export interface AnimalData {
-	tagNumber: string;
-	name: string;
-	dateOfBirth: string; // yyyy-mm-dd
-	breed?: string;
-	purchasePrice?: string;
-	shedLocation?: string; // exact option label
+	tagNumber: string;          // Unique animal tag number (e.g., A-001)
+	name: string;               // Animal name
+	dateOfBirth: string;        // yyyy-mm-dd format for <input type="date">
+	breed?: string;             // Optional breed text
+	purchasePrice?: string;     // Optional numeric string
+	shedLocation?: string;      // Exact option label for shed/location selector
 }
 
-export class AddAnimalPage {
-	readonly page: Page;
-
+export class AddAnimalPage extends BasePage {
 	constructor(page: Page) {
-		this.page = page;
+		super(page);
 	}
 
+	/** Opens the Animals tab and then opens the Add Animal modal. */
 	async open(): Promise<void> {
 		await this.page.getByRole('tab', { name: 'Animals' }).click();
 		await this.page.locator('span', { hasText: 'Add Animal' }).click();
 	}
 
+	/** Asserts the modal is visible. */
 	async verifyOpen(): Promise<void> {
 		await expect(this.page.getByText('Add New Animal')).toBeVisible();
 	}
 
+	/** Asserts the modal is not visible. */
 	async verifyClosed(): Promise<void> {
 		await expect(this.page.getByText('Add New Animal')).not.toBeVisible();
 	}
 
+	/** Fills the form with provided data. Optional fields are skipped when undefined. */
 	async fillForm(data: AnimalData): Promise<void> {
 		await this.page.getByPlaceholder('e.g., A-001').fill(data.tagNumber);
 		await this.page.getByPlaceholder('Animal name').fill(data.name);
@@ -44,6 +51,10 @@ export class AddAnimalPage {
 		}
 	}
 
+	/**
+	 * Selects a Shed Location by label. Handles custom dropdowns and native selects.
+	 * Uses several locator strategies to robustly open and choose an option.
+	 */
 	async selectShedLocation(label: string): Promise<void> {
 		const triggers = [
 			this.page.getByRole('combobox', { name: /shed location/i }),
@@ -96,11 +107,23 @@ export class AddAnimalPage {
 		}
 	}
 
+	/** Clicks the "Add Animal" submit button. */
 	async submit(): Promise<void> {
 		await this.page.getByRole('button', { name: /^Add Animal$/i }).click();
 	}
 
+	/** Clicks the Cancel button in the modal. */
 	async cancel(): Promise<void> {
 		await this.page.getByRole('button', { name: 'Cancel' }).click();
+	}
+
+	/** Verifies an error alert or inline message contains given text. */
+	async expectErrorContains(text: string): Promise<void> {
+		const alert = this.page.getByRole('alert');
+		if (await alert.count()) {
+			await expect(alert.getByText(text, { exact: false })).toBeVisible();
+			return;
+		}
+		await expect(this.page.getByText(text, { exact: false })).toBeVisible();
 	}
 }

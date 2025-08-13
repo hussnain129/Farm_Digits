@@ -47,4 +47,17 @@ export class AddShedPage {
   async verifyModalOpen() {
     await expect(this.page.getByText('Add Shed Location')).toBeVisible();
   }
+
+  async expectErrorContains(text: string) {
+    const alert = this.page.getByRole('alert');
+    if (await alert.count()) {
+      await expect(alert.getByText(text, { exact: false })).toBeVisible();
+      return;
+    }
+    await expect(this.page.getByText(text, { exact: false })).toBeVisible();
+  }
+
+  async expectShedVisibleInList(name: string) {
+    await expect(this.page.getByRole('row').filter({ hasText: name }).first()).toBeVisible({ timeout: 8000 });
+  }
 }

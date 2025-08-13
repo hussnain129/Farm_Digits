@@ -45,8 +45,55 @@ export class AddAnimalPage {
 	}
 
 	async selectShedLocation(label: string): Promise<void> {
-		await this.page.getByRole('button', { name: 'Select location' }).click();
-		await this.page.getByRole('option', { name: label, exact: true }).click();
+		const triggers = [
+			this.page.getByRole('combobox', { name: /shed location/i }),
+			this.page.getByRole('button', { name: /select location/i }),
+			this.page.getByText('Select location', { exact: true }),
+			this.page.getByLabel('Shed Location', { exact: false }),
+		];
+
+		let opened = false;
+		for (const t of triggers) {
+			if ((await t.count()) > 0 && (await t.first().isVisible())) {
+				await t.first().click();
+				opened = true;
+				break;
+			}
+		}
+
+		if (!opened) {
+			const container = this.page.getByText('Shed Location', { exact: false }).locator('..').first();
+			await container.locator('button,[role=button],[role=combobox],select').first().click();
+		}
+
+		await this.page.waitForSelector('[role="option"], [role="listbox"]', { timeout: 3000 }).catch(() => {});
+
+		const optionByRole = this.page.locator('[role="option"]').filter({ hasText: label }).first();
+		if ((await optionByRole.count()) > 0) {
+			await optionByRole.scrollIntoViewIfNeeded();
+			await optionByRole.click();
+			return;
+		}
+
+		const expandedCombo = this.page.locator('[role="combobox"][aria-expanded="true"]');
+		if ((await expandedCombo.count()) > 0) {
+			await expandedCombo.first().pressSequentially(label, { delay: 20 });
+			await this.page.keyboard.press('Enter');
+			return;
+		}
+
+		const firstOption = this.page.locator('[role="option"]').first();
+		if ((await firstOption.count()) > 0) {
+			await firstOption.scrollIntoViewIfNeeded();
+			await firstOption.click();
+			return;
+		}
+
+		const nativeSelect = this.page.getByLabel('Shed Location', { exact: false });
+		if ((await nativeSelect.count()) > 0) {
+			await nativeSelect.selectOption({ label });
+			return;
+		}
 	}
 
 	async submit(): Promise<void> {

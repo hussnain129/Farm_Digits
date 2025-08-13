@@ -4,7 +4,7 @@ import { AddShedPage, ShedData } from '../pages/add-shed.page';
 
 const testShedData: ShedData = {
   name: 'Test Barn A',
-  description: 'This is a test barn for automation testing',
+  description: 'This is a test barn for automation testing..',
   capacity: '50',
   isActive: true
 };

@@ -1,0 +1,154 @@
+# Page snapshot
+
+```yaml
+- navigation:
+  - link "FarmDigits Logo":
+    - /url: /
+    - img "FarmDigits Logo"
+  - link "Home":
+    - /url: /
+  - link "Features":
+    - /url: /features
+  - link "Pricing":
+    - /url: /pricing
+  - link "About":
+    - /url: /about
+  - link "Contact":
+    - /url: /contact
+  - button "Toggle theme":
+    - img
+  - link "Sign In":
+    - /url: /login
+  - link "Get Started Free":
+    - /url: /signup
+- heading "Welcome back" [level=1]
+- paragraph: Login to your account to continue
+- text: Email address
+- textbox "Email address"
+- text: Password
+- link "Forgot password?":
+  - /url: /forgot-password
+- textbox "Password": somepassword
+- button "Show password"
+- checkbox "Remember me for 30 days"
+- text: Remember me for 30 days
+- button "Login": Sign in
+- paragraph:
+  - text: Don't have an account?
+  - link "Sign up for free":
+    - /url: /signup
+- contentinfo:
+  - link "FarmDigits Logo":
+    - /url: /
+    - img "FarmDigits Logo"
+  - paragraph: Empowering farmers with intelligent digital solutions. Transform your agricultural operations with our comprehensive farm management platform trusted by thousands worldwide.
+  - text: 2,500+ Active Farmers 15M+ Animals Tracked
+  - link "Facebook":
+    - /url: https://facebook.com/farmdigits
+    - img
+  - link "Twitter":
+    - /url: https://twitter.com/farmdigits
+    - img
+  - link "LinkedIn":
+    - /url: https://linkedin.com/company/farmdigits
+    - img
+  - link "Instagram":
+    - /url: https://instagram.com/farmdigits
+    - img
+  - heading "Platform" [level=3]
+  - list:
+    - listitem:
+      - link "Features":
+        - /url: /features
+        - img
+        - text: Features
+    - listitem:
+      - link "Pricing":
+        - /url: /pricing
+        - img
+        - text: Pricing
+    - listitem:
+      - link "Dashboard":
+        - /url: /dashboard
+        - img
+        - text: Dashboard
+    - listitem:
+      - link "Integrations":
+        - /url: /integrations
+        - img
+        - text: Integrations
+  - heading "Solutions" [level=3]
+  - list:
+    - listitem:
+      - link "Livestock Management":
+        - /url: /features#livestock
+        - img
+        - text: Livestock Management
+    - listitem:
+      - link "Milk Sales":
+        - /url: /features#milk-sales
+        - img
+        - text: Milk Sales
+    - listitem:
+      - link "Smart Inventory":
+        - /url: /features#inventory
+        - img
+        - text: Smart Inventory
+    - listitem:
+      - link "Analytics & Reports":
+        - /url: /features#analytics
+        - img
+        - text: Analytics & Reports
+  - heading "Support" [level=3]
+  - list:
+    - listitem:
+      - link "Contact Us":
+        - /url: /contact
+        - img
+        - text: Contact Us
+    - listitem:
+      - link "About Us":
+        - /url: /about
+        - img
+        - text: About Us
+    - listitem:
+      - link "Help Center":
+        - /url: /help
+        - img
+        - text: Help Center
+    - listitem:
+      - link "API Documentation":
+        - /url: /api-docs
+        - img
+        - text: API Documentation
+  - img
+  - text: support@farmdigits.com
+  - img
+  - text: +1 (555) 123-4567
+  - img
+  - text: Stay Updated
+  - heading "Get the Latest Farm Tech Insights" [level=3]
+  - paragraph: Subscribe to our newsletter for farming tips, product updates, and industry insights delivered to your inbox.
+  - textbox "Enter your email address"
+  - button "Subscribe":
+    - text: Subscribe
+    - img
+  - text: © 2025 FarmDigits. All rights reserved. • Made with
+  - img
+  - text: for farmers worldwide • Developed with
+  - img
+  - text: by
+  - link "Outscalers":
+    - /url: https://outscalers.com
+  - link "Privacy Policy":
+    - /url: /privacy
+  - link "Terms of Service":
+    - /url: /terms
+  - link "Cookie Policy":
+    - /url: /cookies
+  - link "Security":
+    - /url: /security
+- region "Notifications (F8)":
+  - list
+- alert
+```

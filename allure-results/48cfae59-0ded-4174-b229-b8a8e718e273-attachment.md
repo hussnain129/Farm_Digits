@@ -1,0 +1,216 @@
+# Page snapshot
+
+```yaml
+- region "Notifications alt+T"
+- complementary:
+  - link "logo FarmDigits":
+    - /url: /dashboard
+    - img "logo"
+    - img "FarmDigits"
+  - navigation:
+    - img
+    - heading "Overview" [level=2]
+    - link "Dashboard":
+      - /url: /dashboard
+      - img
+      - text: Dashboard
+    - img
+    - heading "Farm Management" [level=2]
+    - button "Livestock Management" [expanded]:
+      - img
+      - text: Livestock Management
+      - img
+    - link "Animals Manage animal records":
+      - /url: /dashboard/livestock/animals
+    - link "Health & Vaccination Monitor animal health and treatments":
+      - /url: /dashboard/livestock/health
+    - link "Reproduction Monitor breeding, pregnancy, and deliveries":
+      - /url: /dashboard/livestock/reproduction
+    - button "Milk Management":
+      - img
+      - text: Milk Management
+      - img
+    - button "Stock Management":
+      - img
+      - text: Stock Management
+      - img
+    - button "Finance Management":
+      - img
+      - text: Finance Management
+      - img
+    - button "Worker Management":
+      - img
+      - text: Worker Management
+      - img
+    - img
+    - heading "Customer Management" [level=2]
+    - button "Customer Management":
+      - img
+      - text: Customer Management
+      - img
+    - img
+    - heading "Billing & Subscription" [level=2]
+    - button "Billing & Subscription":
+      - img
+      - text: Billing & Subscription
+      - img
+    - img
+    - heading "User Management" [level=2]
+    - button "User Management":
+      - img
+      - text: User Management
+      - img
+    - img
+    - heading "Reports & Tools" [level=2]
+    - button "Reports & Analytics":
+      - img
+      - text: Reports & Analytics
+      - img
+    - img
+    - heading "Settings" [level=2]
+    - button "Settings":
+      - img
+      - text: Settings
+      - img
+  - text: Developed with
+  - img
+  - text: by
+  - link "Outscalers":
+    - /url: https://outscalers.com
+- navigation:
+  - button:
+    - img
+  - img
+  - text: Farm Active
+  - button "0":
+    - img
+    - text: "0"
+  - button "Toggle theme Change theme":
+    - img
+    - img
+    - text: Toggle theme Change theme
+  - button "M Musa Bajwa Farm Manager":
+    - text: M
+    - paragraph: Musa Bajwa
+    - paragraph: Farm Manager
+    - img
+- main:
+  - tablist:
+    - tab "Dashboard":
+      - img
+      - text: Dashboard
+    - tab "Sheds" [selected]:
+      - img
+      - text: Sheds
+    - tab "Animals":
+      - img
+      - text: Animals
+  - tabpanel "Sheds":
+    - img
+    - heading "Shed Locations" [level=2]
+    - paragraph: Manage farm buildings, sheds, and field locations for housing your livestock
+    - button "Add Shed":
+      - img
+      - text: Add Shed
+    - img
+    - textbox "Search sheds..."
+    - combobox:
+      - img
+      - text: Filter by status
+    - table:
+      - rowgroup:
+        - row "Name Description Capacity Status Actions":
+          - cell "Name"
+          - cell "Description"
+          - cell "Capacity"
+          - cell "Status"
+          - cell "Actions"
+      - rowgroup:
+        - row "Dhoke Kashmirian — 90 active Open menu":
+          - cell "Dhoke Kashmirian"
+          - cell "—"
+          - cell "90"
+          - cell "active"
+          - cell "Open menu":
+            - button "Open menu":
+              - img
+              - text: Open menu
+        - row "Lillith Bruce Adipisicing quam vel 9 active Open menu":
+          - cell "Lillith Bruce"
+          - cell "Adipisicing quam vel"
+          - cell "9"
+          - cell "active"
+          - cell "Open menu":
+            - button "Open menu":
+              - img
+              - text: Open menu
+        - row "Dhoke kHABA gregB 5 active Open menu":
+          - cell "Dhoke kHABA"
+          - cell "gregB"
+          - cell "5"
+          - cell "active"
+          - cell "Open menu":
+            - button "Open menu":
+              - img
+              - text: Open menu
+        - row "Quemby Ayers Et enim tempora fuga 72 active Open menu":
+          - cell "Quemby Ayers"
+          - cell "Et enim tempora fuga"
+          - cell "72"
+          - cell "active"
+          - cell "Open menu":
+            - button "Open menu":
+              - img
+              - text: Open menu
+        - row "Jasmine Mccullough Voluptates culpa ut 65 active Open menu":
+          - cell "Jasmine Mccullough"
+          - cell "Voluptates culpa ut"
+          - cell "65"
+          - cell "active"
+          - cell "Open menu":
+            - button "Open menu":
+              - img
+              - text: Open menu
+        - row "Giselle Bullock Suscipit voluptas ve 30 active Open menu":
+          - cell "Giselle Bullock"
+          - cell "Suscipit voluptas ve"
+          - cell "30"
+          - cell "active"
+          - cell "Open menu":
+            - button "Open menu":
+              - img
+              - text: Open menu
+        - row "Garrison Solis Exercitationem illum 69 active Open menu":
+          - cell "Garrison Solis"
+          - cell "Exercitationem illum"
+          - cell "69"
+          - cell "active"
+          - cell "Open menu":
+            - button "Open menu":
+              - img
+              - text: Open menu
+        - row "Dhoke Paracha Satellite Town 200 active Open menu":
+          - cell "Dhoke Paracha"
+          - cell "Satellite Town"
+          - cell "200"
+          - cell "active"
+          - cell "Open menu":
+            - button "Open menu":
+              - img
+              - text: Open menu
+    - text: Showing 1 to 8 of 8 results
+    - button "First page" [disabled]:
+      - img
+    - button "Previous page" [disabled]:
+      - img
+    - button "1"
+    - button "Next page" [disabled]:
+      - img
+    - button "Last page" [disabled]:
+      - img
+    - text: Rows per page
+    - combobox: "10"
+- region "Notifications (F8)":
+  - list
+- alert: FarmDigits
+```

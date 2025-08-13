@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","30175","user can log in with valid credentials","chromium","Wed Aug 06 16:22:25 PKT 2025","passed","Wed Aug 06 16:22:55 PKT 2025","","login.spec.ts","",""
+"","28398","user can log in with valid credentials","webkit","Wed Aug 06 16:22:25 PKT 2025","passed","Wed Aug 06 16:22:54 PKT 2025","","login.spec.ts","",""
+"","27711","user can log in with valid credentials","firefox","Wed Aug 06 16:22:25 PKT 2025","passed","Wed Aug 06 16:22:53 PKT 2025","","login.spec.ts","",""

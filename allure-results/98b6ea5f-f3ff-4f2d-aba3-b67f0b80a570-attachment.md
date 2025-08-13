@@ -1,0 +1,317 @@
+# Page snapshot
+
+```yaml
+- region "Notifications alt+T"
+- complementary:
+  - link "logo FarmDigits":
+    - /url: /dashboard
+    - img "logo"
+    - img "FarmDigits"
+  - navigation:
+    - img
+    - heading "Overview" [level=2]
+    - link "Dashboard":
+      - /url: /dashboard
+      - img
+      - text: Dashboard
+    - img
+    - heading "Farm Management" [level=2]
+    - button "Livestock Management" [expanded]:
+      - img
+      - text: Livestock Management
+      - img
+    - link "Animals Manage animal records":
+      - /url: /dashboard/livestock/animals
+    - link "Health & Vaccination Monitor animal health and treatments":
+      - /url: /dashboard/livestock/health
+    - link "Reproduction Monitor breeding, pregnancy, and deliveries":
+      - /url: /dashboard/livestock/reproduction
+    - button "Milk Management":
+      - img
+      - text: Milk Management
+      - img
+    - button "Stock Management":
+      - img
+      - text: Stock Management
+      - img
+    - button "Finance Management":
+      - img
+      - text: Finance Management
+      - img
+    - button "Worker Management":
+      - img
+      - text: Worker Management
+      - img
+    - img
+    - heading "Customer Management" [level=2]
+    - button "Customer Management":
+      - img
+      - text: Customer Management
+      - img
+    - img
+    - heading "Billing & Subscription" [level=2]
+    - button "Billing & Subscription":
+      - img
+      - text: Billing & Subscription
+      - img
+    - img
+    - heading "User Management" [level=2]
+    - button "User Management":
+      - img
+      - text: User Management
+      - img
+    - img
+    - heading "Reports & Tools" [level=2]
+    - button "Reports & Analytics":
+      - img
+      - text: Reports & Analytics
+      - img
+    - img
+    - heading "Settings" [level=2]
+    - button "Settings":
+      - img
+      - text: Settings
+      - img
+  - text: Developed with
+  - img
+  - text: by
+  - link "Outscalers":
+    - /url: https://outscalers.com
+- navigation:
+  - button:
+    - img
+  - img
+  - text: Farm Active
+  - button "0":
+    - img
+    - text: "0"
+  - button "Toggle theme Change theme":
+    - img
+    - img
+    - text: Toggle theme Change theme
+  - button "M Musa Bajwa Farm Manager":
+    - text: M
+    - paragraph: Musa Bajwa
+    - paragraph: Farm Manager
+    - img
+- main:
+  - tablist:
+    - tab "Dashboard":
+      - img
+      - text: Dashboard
+    - tab "Sheds":
+      - img
+      - text: Sheds
+    - tab "Animals" [selected]:
+      - img
+      - text: Animals
+  - tabpanel "Animals":
+    - img
+    - heading "Animal Records" [level=2]
+    - paragraph: Track and manage your livestock animals, their health status, and breeding information
+    - button "Add Animal":
+      - img
+      - text: Add Animal
+    - img
+    - textbox "Search animals..."
+    - combobox:
+      - img
+      - text: Filter by type
+    - combobox:
+      - img
+      - text: Filter by Health
+    - combobox:
+      - img
+      - text: Filter by status
+    - button "Export":
+      - img
+      - text: Export
+    - table:
+      - rowgroup:
+        - row "Name Date of Birth Animal Type Gender Status Health Status Breed Actions":
+          - cell "Name"
+          - cell "Date of Birth"
+          - cell "Animal Type"
+          - cell "Gender"
+          - cell "Status"
+          - cell "Health Status"
+          - cell "Breed"
+          - cell "Actions"
+      - rowgroup:
+        - row "Ria Fra 2025-07-28 Bull Male Active Sick Mollit nisi eu Nam n Open menu":
+          - cell "Ria Fra"
+          - cell "2025-07-28"
+          - cell "Bull"
+          - cell "Male"
+          - cell "Active"
+          - cell "Sick"
+          - cell "Mollit nisi eu Nam n"
+          - cell "Open menu":
+            - button "Mark as Deceased":
+              - img
+            - button "Mark as Sold":
+              - img
+            - button "Open menu":
+              - img
+              - text: Open menu
+        - row "WRGRFGB 2025-07-29 Cow Female Active Healthy Mollit nisi eu Nam n Open menu":
+          - cell "WRGRFGB"
+          - cell "2025-07-29"
+          - cell "Cow"
+          - cell "Female"
+          - cell "Active"
+          - cell "Healthy"
+          - cell "Mollit nisi eu Nam n"
+          - cell "Open menu":
+            - button "Mark as Deceased":
+              - img
+            - button "Mark as Sold":
+              - img
+            - button "Open menu":
+              - img
+              - text: Open menu
+        - row "Alfonso Holman 2025-06-10 Cow Female Active Under treatment Dolore ea et ipsum e Open menu":
+          - cell "Alfonso Holman"
+          - cell "2025-06-10"
+          - cell "Cow"
+          - cell "Female"
+          - cell "Active"
+          - cell "Under treatment"
+          - cell "Dolore ea et ipsum e"
+          - cell "Open menu":
+            - button "Mark as Deceased":
+              - img
+            - button "Mark as Sold":
+              - img
+            - button "Open menu":
+              - img
+              - text: Open menu
+        - row "Hyacinth Beck 2012-11-24 Weaner Male Active Under treatment Voluptate at similiq Open menu":
+          - cell "Hyacinth Beck"
+          - cell "2012-11-24"
+          - cell "Weaner"
+          - cell "Male"
+          - cell "Active"
+          - cell "Under treatment"
+          - cell "Voluptate at similiq"
+          - cell "Open menu":
+            - button "Mark as Deceased":
+              - img
+            - button "Mark as Sold":
+              - img
+            - button "Open menu":
+              - img
+              - text: Open menu
+        - row "Jasper Pennington 2000-10-21 Bull Male Active Sick A veniam rem corrup Open menu":
+          - cell "Jasper Pennington"
+          - cell "2000-10-21"
+          - cell "Bull"
+          - cell "Male"
+          - cell "Active"
+          - cell "Sick"
+          - cell "A veniam rem corrup"
+          - cell "Open menu":
+            - button "Mark as Deceased":
+              - img
+            - button "Mark as Sold":
+              - img
+            - button "Open menu":
+              - img
+              - text: Open menu
+        - row "Hiroko Hahn 1983-06-05 Weaner Female Active Sick Sit rerum vero aut i Open menu":
+          - cell "Hiroko Hahn"
+          - cell "1983-06-05"
+          - cell "Weaner"
+          - cell "Female"
+          - cell "Active"
+          - cell "Sick"
+          - cell "Sit rerum vero aut i"
+          - cell "Open menu":
+            - button "Mark as Deceased":
+              - img
+            - button "Mark as Sold":
+              - img
+            - button "Open menu":
+              - img
+              - text: Open menu
+        - row "Azalia Rodriguez Deceased Aug 01, 2025 2018-01-18 Weaner Male Deceased Sick Aliquid culpa simil Open menu":
+          - cell "Azalia Rodriguez Deceased Aug 01, 2025"
+          - cell "2018-01-18"
+          - cell "Weaner"
+          - cell "Male"
+          - cell "Deceased":
+            - img
+            - text: Deceased
+          - cell "Sick"
+          - cell "Aliquid culpa simil"
+          - cell "Open menu":
+            - button "Revert Death Status":
+              - img
+            - button "Open menu":
+              - img
+              - text: Open menu
+        - row "Joan Schroeder Deceased Jul 24, 2025 2001-06-21 Bull Male Deceased Under treatment Doloremque placeat Open menu":
+          - cell "Joan Schroeder Deceased Jul 24, 2025"
+          - cell "2001-06-21"
+          - cell "Bull"
+          - cell "Male"
+          - cell "Deceased":
+            - img
+            - text: Deceased
+          - cell "Under treatment"
+          - cell "Doloremque placeat"
+          - cell "Open menu":
+            - button "Revert Death Status":
+              - img
+            - button "Open menu":
+              - img
+              - text: Open menu
+        - row "Adam jgyuig 1975-03-29 Calf Female Active Sick Mollit nisi eu Nam n Open menu":
+          - cell "Adam jgyuig"
+          - cell "1975-03-29"
+          - cell "Calf"
+          - cell "Female"
+          - cell "Active"
+          - cell "Sick"
+          - cell "Mollit nisi eu Nam n"
+          - cell "Open menu":
+            - button "Mark as Deceased":
+              - img
+            - button "Mark as Sold":
+              - img
+            - button "Open menu":
+              - img
+              - text: Open menu
+        - row "Berk Collins 1982-12-02 Cow Female Active Healthy Duis incididunt inci Open menu":
+          - cell "Berk Collins"
+          - cell "1982-12-02"
+          - cell "Cow"
+          - cell "Female"
+          - cell "Active"
+          - cell "Healthy"
+          - cell "Duis incididunt inci"
+          - cell "Open menu":
+            - button "Mark as Deceased":
+              - img
+            - button "Mark as Sold":
+              - img
+            - button "Open menu":
+              - img
+              - text: Open menu
+    - text: Showing 1 to 10 of 11 results
+    - button "First page" [disabled]:
+      - img
+    - button "Previous page" [disabled]:
+      - img
+    - button "1"
+    - button "2"
+    - button "Next page":
+      - img
+    - button "Last page":
+      - img
+    - text: Rows per page
+    - combobox: "10"
+- region "Notifications (F8)":
+  - list
+- alert: FarmDigits
+```

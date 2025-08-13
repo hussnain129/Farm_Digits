@@ -1,0 +1,119 @@
+# Page snapshot
+
+```yaml
+- region "Notifications alt+T"
+- complementary:
+  - link "logo FarmDigits":
+    - /url: /dashboard
+    - img "logo"
+    - img "FarmDigits"
+  - navigation:
+    - img
+    - heading "Overview" [level=2]
+    - link "Dashboard":
+      - /url: /dashboard
+      - img
+      - text: Dashboard
+    - img
+    - heading "Farm Management" [level=2]
+    - button "Livestock Management" [expanded]:
+      - img
+      - text: Livestock Management
+      - img
+    - link "Animals Manage animal records":
+      - /url: /dashboard/livestock/animals
+    - link "Health & Vaccination Monitor animal health and treatments":
+      - /url: /dashboard/livestock/health
+    - link "Reproduction Monitor breeding, pregnancy, and deliveries":
+      - /url: /dashboard/livestock/reproduction
+    - button "Milk Management":
+      - img
+      - text: Milk Management
+      - img
+    - button "Stock Management":
+      - img
+      - text: Stock Management
+      - img
+    - button "Finance Management":
+      - img
+      - text: Finance Management
+      - img
+    - button "Worker Management":
+      - img
+      - text: Worker Management
+      - img
+    - img
+    - heading "Customer Management" [level=2]
+    - button "Customer Management":
+      - img
+      - text: Customer Management
+      - img
+    - img
+    - heading "Billing & Subscription" [level=2]
+    - button "Billing & Subscription":
+      - img
+      - text: Billing & Subscription
+      - img
+    - img
+    - heading "User Management" [level=2]
+    - button "User Management":
+      - img
+      - text: User Management
+      - img
+    - img
+    - heading "Reports & Tools" [level=2]
+    - button "Reports & Analytics":
+      - img
+      - text: Reports & Analytics
+      - img
+    - img
+    - heading "Settings" [level=2]
+    - button "Settings":
+      - img
+      - text: Settings
+      - img
+  - text: Developed with
+  - img
+  - text: by
+  - link "Outscalers":
+    - /url: https://outscalers.com
+- navigation:
+  - button:
+    - img
+  - img
+  - text: Farm Active
+  - button "0":
+    - img
+    - text: "0"
+  - button "Toggle theme Change theme":
+    - img
+    - img
+    - text: Toggle theme Change theme
+  - button "M Musa Bajwa Farm Manager":
+    - text: M
+    - paragraph: Musa Bajwa
+    - paragraph: Farm Manager
+    - img
+- main:
+  - tablist:
+    - tab "Dashboard" [selected]:
+      - img
+      - text: Dashboard
+    - tab "Sheds":
+      - img
+      - text: Sheds
+    - tab "Animals":
+      - img
+      - text: Animals
+  - tabpanel "Dashboard":
+    - img
+    - heading "Livestock Analytics Dashboard" [level=2]
+    - paragraph: Overview of your livestock population and health metrics
+    - heading "Livestock Population" [level=4]
+    - text: Cows 🐄 3 Heifers 🐄 0 Bulls 🐂 3 Weaners 🐄 3 Calves 🐑 2
+    - heading "Health Status Overview" [level=4]
+    - text: Healthy 💚 2 Sick ❤️ 6 Under Treatment 💛 3 Deceased 🕊️ 2
+- region "Notifications (F8)":
+  - list
+- alert: FarmDigits
+```

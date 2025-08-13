@@ -31,11 +31,26 @@ npm run allure:open
 ```
 
 ## Structure
-- `pages/` — Page Objects (`login.page.ts`, `sidebar.page.ts`, `add-animal.page.ts`, ...)
-- `tests/` — Specs using POM (e.g., `animal-add.spec.ts`, `login.spec.ts`)
-- `playwright.config.ts` — config (baseURL, retries, tracing, reporter)
+```
+.
+├─ pages/
+│  ├─ base.page.ts           # BasePage with shared helpers (factory-style foundation)
+│  ├─ login.page.ts          # Login flow POM
+│  ├─ sidebar.page.ts        # Sidebar navigation POM
+│  └─ add-animal.page.ts     # Add Animal modal POM
+│
+├─ tests/
+│  ├─ animal-add.spec.ts     # Add Animal scenarios (happy path, validation, cancel)
+│  └─ login.spec.ts          # Login scenarios
+│
+├─ playwright.config.ts      # Config: baseURL, reporters, retries, tracing
+├─ package.json              # Scripts for runs/reports
+├─ README.md
+└─ (optional) .env           # Environment variables
+```
 
-## Conventions
-- Prefer `getByRole` and accessible names
-- Use Page Objects for flows
-- Keep tests independent and idempotent
+Notes
+- The framework uses a BasePage with small, reusable helpers to keep POMs concise.
+- Accessible-first locators (`getByRole`) are preferred for stability.
+- Auth storage reuse and API seeding are not enabled by default in this repo snapshot.
+- Visual snapshots can be added via `expect(page).toHaveScreenshot()` when needed.
